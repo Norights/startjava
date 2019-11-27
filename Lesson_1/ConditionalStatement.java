@@ -18,8 +18,8 @@
             } else {
                 System.out.println("Your height is less than 180 centimeters");
             }
-            char DoesyournamebeginwiththeletterM = 'M';
-            if(DoesyournamebeginwiththeletterM == 'M') {
+            char doesYourNameBeginWithTheLetterM = 'M';
+            if(doesYourNameBeginWithTheLetterM == 'M') {
                 System.out.println("Your name begins with the letter M");
             } else { 
                 System.out.println("Your name does not begin with the letter M");
