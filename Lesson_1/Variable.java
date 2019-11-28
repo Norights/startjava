@@ -1,6 +1,6 @@
-    public class Variable {
+public class Variable {
 
-        public static void main(String[] args) {
+    public static void main(String[] args) {
             byte hdd = 2;
             System.out.println("hdd: " + hdd + " pieces");
             short computerRam = 16000;
