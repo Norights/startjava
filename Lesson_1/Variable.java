@@ -17,5 +17,5 @@ public class Variable {
             System.out.println("Name of disc with photos: " + nameOfDiscWithPhotos);
             boolean isLikeJava = true;
             System.out.println("Is like Java? - " + isLikeJava);        
-        }
     }
+}

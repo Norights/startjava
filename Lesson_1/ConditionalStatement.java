@@ -9,6 +9,7 @@ public class ConditionalStatement {
         boolean isMan = true;
         if(isMan) {
             System.out.println("You're a man");
+        }
         if(!isMan) {
             System.out.println("You're not a man");
         }
