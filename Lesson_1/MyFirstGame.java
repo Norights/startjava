@@ -3,11 +3,11 @@ public class MyFirstGame {
         int randomNumber = 56;
         int playersNumber = 78;
         while (playersNumber < randomNumber) {
-        playersNumber++;
+            playersNumber++;
             System.out.println("Random number is more than you entered"); 
         }
         while (playersNumber > randomNumber) {
-        playersNumber--;
+            playersNumber--;
             System.out.println("Random number is less than you entered");
         }
         if (playersNumber == randomNumber) {
