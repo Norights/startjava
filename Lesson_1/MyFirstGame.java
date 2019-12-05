@@ -10,5 +10,6 @@ public class MyFirstGame {
             playerNumber--;
             System.out.println("Random number is less than you entered");
         }
+        System.out.println("You win!")
     }
 }
