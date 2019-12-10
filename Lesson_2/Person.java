@@ -10,11 +10,11 @@ public class Person {
     }
     boolean sit() {
         System.out.println("He can sit");
-            return true;
+        return true;
         }
     boolean run() {
         System.out.println("He can run");
-            return true;
+        return true;
         }
     String talk() {
         return "He can talk";
