@@ -3,9 +3,10 @@ public class WolfTest {
         Wolf wolfOne = new Wolf();
         wolfOne.wolfGender = "Male";
         wolfOne.wolfName = "Hardy";
-        wolfOne.wolfWeight = (int)32;
-        wolfOne.wolfAge = (int)3;
+        wolfOne.wolfWeight = 32;
+        wolfOne.wolfAge = 3;
         wolfOne.wolfColor = "Gray";
+
         System.out.println("Wolf gender = " + wolfOne.wolfGender);
         System.out.println("Wolf name = " + wolfOne.wolfName);
         System.out.println("Wolf weight = " + wolfOne.wolfWeight);
