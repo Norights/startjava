@@ -1,64 +1,69 @@
 public class Wolf {
    
-    private String wolfGender;
-    private String wolfName;
-    private int wolfWeight;
-    private int wolfAge;
-    private String wolfColor;
+private String Gender;
+    private String Name;
+    private int Weight;
+    private int Age;
+    private String Color;
     
-    public String getWolfGender() {
-        return wolfGender;
-    }
-    public void setWolfGender(String wolfGender) {
-        this.wolfGender = wolfGender;
-    }
-   
-    public String getWolfName() {
-        return wolfName;
-    }
-    public void setWolfName(String wolfName) {
-        this.wolfName = wolfName;
+    public String getGender() {
+        return Gender;
     }
     
-    public int getWolfWeight() {
-        return wolfWeight;
-    }
-    public void setWolfWeight(int wolfWeight) {
-        this.wolfWeight = wolfWeight;
+    public void setGender(String Gender) {
+        this.Gender = Gender;
     }
     
-    public int getWolfAge() {
-        if(wolfAge > 8) {
+    public String getName() {
+        return Name;
+    }
+    
+    public void setName(String Name) {
+        this.Name = Name;
+    }
+    
+    public int getWeight() {
+        return Weight;
+    }
+    
+    public void setWeight(int Weight) {
+        this.Weight = Weight;
+    }
+    
+    public int getAge() {
+        if (Age > 8) {
             System.out.println("Incorrect age");
         }
-        return wolfAge;
-    }
-    public void setWolfAge(int wolfAge) {
-        this.wolfAge = wolfAge;
+        return Age;
     }
     
-    public String getWolfColor() {
-        return wolfColor;
+    public void setAge(int Age) {
+        this.Age = Age;
     }
-    public void setWolfColor(String wolfColor) {
-        this.wolfColor = wolfColor;
+    
+    public String getColor() {
+        return Color;
+    }
+    
+    public void setColor(String Color) {
+        this.Color = Color;
     }
     
     
     public boolean walk() {
-        System.out.println("Wolf can walk");    
-            return true;
-        }
-
+        System.out.println("Wolf can walk");
+        return true;
+    }
+    
     public boolean sit() {
         System.out.println("Wolf can sit");
-            return true;
-        }
-
-    public String run () {
+        return true;
+    }
+    
+    public String run() {
         return "Wolf can run";
     }
-
+    
     public String howl() {
         return "Wolf can howl";
     }
@@ -67,4 +72,3 @@ public class Wolf {
         return "Wolf can hunt";
     }
 }
-
