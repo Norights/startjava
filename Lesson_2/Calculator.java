@@ -2,19 +2,8 @@ public class Calculator {
     private int num1;
     private int num2;
     private int ans;
-    private char mathematicalOperation;
-    void calculate() {
-    switch (mathematicalOperation) {
-        case '+': ans = num1 + num2;
-            break;
-        case '-': ans = num1 - num2;
-            break;
-        case '*': ans = num1 * num2;
-            break;
-        case '/': ans = num1 / num2;
-            break;
-        }
-    }
+    private char sign;
+
     public int getNum1() {
         return num1;
     }
@@ -38,11 +27,27 @@ public class Calculator {
         this.ans = ans;
     }
     
-    public char getMathematicalOperation() {
-        return mathematicalOperation;
+    public char getSign() {
+        return sign;
     }
     
-    public void setMathematicalOperation(char mathematicalOperation) {
-        this.mathematicalOperation = mathematicalOperation;
+    public void setSign(char sign) {
+        this.sign = sign;
+    }
+
+    int calculate() {
+    switch(sign) {
+        case '+': ans = num1 + num2;
+            break;
+        case '-': ans = num1 - num2;
+            break;
+        case '*': ans = num1 * num2;
+            break;
+        case '/': ans = num1 / num2;
+            break;
+        }
+        return ans;
     }
 }
+
+
