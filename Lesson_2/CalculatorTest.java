@@ -4,14 +4,14 @@ public class CalculatorTest {
         Calculator calcOne = new Calculator();
         Scanner scan = new Scanner(System.in);
 
-        calcOne.setNum1(scan.nextInt());
         System.out.println("Enter number 1");
+        calcOne.setNum1(scan.nextInt());
 
-        calcOne.setSign((char) scan.nextFloat());
         System.out.print("Enter an operator (+, -, *, /): ");
+        calcOne.setSign(scan.next().charAt(0)); 
 
-        calcOne.setNum2(scan.nextInt());
         System.out.println("Enter number 2");
+        calcOne.setNum2(scan.nextInt());
 
         calcOne.calculate();
         calcOne.getAns();
