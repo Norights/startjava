@@ -1,7 +1,7 @@
 public class Calculator {
     private int num1;
     private int num2;
-    private int ans;
+    private int answer;
     private char sign;
 
     public int getNum1() {
@@ -19,12 +19,12 @@ public class Calculator {
     public void setNum2(int num2) {
         this.num2 = num2;
     }
-    public int getAns() {
-        return ans;
+    public int getAnswer() {
+        return answer;
     }
     
-    public void setAns(int ans) {
-        this.ans = ans;
+    public void setAnswer(int answer) {
+        this.answer = answer;
     }
     
     public char getSign() {
@@ -36,18 +36,26 @@ public class Calculator {
     }
 
     int calculate() {
-    switch(sign) {
-        case '+': ans = num1 + num2;
-            break;
-        case '-': ans = num1 - num2;
-            break;
-        case '*': ans = num1 * num2;
-            break;
-        case '/': ans = num1 / num2;
-            break;
+        switch(sign) {
+            case '+': answer = num1 + num2;
+                break;
+            case '-': answer = num1 - num2;
+                break;
+            case '*': answer = num1 * num2;
+                break;
+            case '/': answer = num1 / num2;
+                break;
+            case '^': {
+                int result = 1;
+                for (int i = 1; i <= num2; i++) {
+                    result = result * num1;
+                    answer = result;
+                }
+            }
+                return answer;
+            }
+            return answer;
         }
-        return ans;
     }
-}
 
 
