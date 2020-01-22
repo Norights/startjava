@@ -52,10 +52,9 @@ public class Calculator {
                     answer = result;
                 }
             }
-                return answer;
-            }
-            return answer;
         }
+        return answer;
     }
+}
 
 
